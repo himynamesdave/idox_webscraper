@@ -122,7 +122,8 @@ def drive_Spider(url,output):
 
 # capture url's to be scraped from the google docs sheet
 def request_Doc():
-    data = requests.get("https://docs.google.com/spreadsheets/d/1YJWH5up2sinNY7YubqJ_VbmqAR_Lj5xYmbd_ChqPjdY/edit#gid=0")
+    data = requests.get("ENTER_G_SHEET")
+    #"https://docs.google.com/spreadsheets/d/1YJWH5up2sinNY7YubqJ_VbmqAR_Lj5xYmbd_ChqPjdY/edit#gid=0
     soup = BeautifulSoup(data.text, "html.parser")
     return [i.contents[0] for i in soup.select('td.s3 > div.softmerge-inner')]
 
