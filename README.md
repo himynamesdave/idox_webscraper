@@ -17,7 +17,7 @@ For the Python modules:
 use pip to add bs4, requests, selenium, and multiprocessing
 
 Description:
-This script scrapes all urls in columnC from the following google document, https://docs.google.com/spreadsheets/d/1YJWH5up2sinNY7YubqJ_VbmqAR_Lj5xYmbd_ChqPjdY/edit#gid=0,and proceeds to capture all application listing data.  It only works for the current month.  It scrapes all pages containing listings for each url.
+This script scrapes all urls in column C from the following google document, https://docs.google.com/spreadsheets/d/1YJWH5up2sinNY7YubqJ_VbmqAR_Lj5xYmbd_ChqPjdY/edit#gid=0, and proceeds to capture all application listing data.  It only works for the current month.  It scrapes all pages containing listings for each url.
 
 Run Time:
 the first two urls and all subpages took (17-18 min) to fully scrape.  Some urls load way faster than others.  Some urls have way more data than others.  For instance the first url can be fully scraped in about 30s.  The remaining 16.5 min is for page 2!  I’m approximating the full running time to be anywhere from 3-5 hours.  
